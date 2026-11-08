@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para ti ❤️</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding: 5%;
+            background-color: #ffebf0; /* Fondo rosa suave */
+            color: #333;
+        }
+        #contenido {
+            display: none;
+            margin-top: 30px;
+            font-size: 18px;
+            line-height: 1.8;
+            text-align: left;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        button {
+            padding: 15px 35px;
+            font-size: 18px;
+            background-color: #ff3333; /* Botón rojito */
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(255, 51, 51, 0.3);
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #cc0000; /* Rojo más oscuro al pasar el cursor */
+        }
+        .cancion {
+            color: #ff3333;
+            font-style: italic;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Nuestra Canción</h1>
+    
+    <!-- Botón de entrada -->
+    <button id="btnEntrar">Leer dedicatoria 💌</button>
+
+    <!-- Contenedor de la carta -->
+    <div id="contenido">
+        <p>Hola, bueno ya te dormiste, solo quería dedicarte esta canción 🫶, bueno porque pues pienso que vivimos un poco lo que habla.</p>
+        
+        <p><span class="cancion">"Yo sé, quedaron cicatrices"</span> porque sé que esta relación se ha roto muchas veces por no saber estar en paz y pues por algo que alguno de los dos hacemos mal.</p>
+        
+        <p><span class="cancion">"Ya sabemos de nuestros matices, yo sé que sanará"</span> creo que ambos sabemos que no importa que a veces peleamos y nos dejamos de hablar unos días jaja, siempre alguno de los dos termina cediendo para tratar de arreglar las cosas. Pero realmente no nos hemos dejado de hablar más de 4 días jaja y bueno eso me parece curioso.</p>
+        
+        <p><span class="cancion">"There's no reason, not to love like I love you"</span> creo que a pesar de las dudas que hemos tenido yo siento que al final no hay una razón para no amarte como te amo, sé que a veces pienso estar confundido pero sé que te amo porque te admiro y sé que a veces quiero competir contigo o cuando me enojo te digo que eres inferior, pero simplemente sé que cada quien tiene sus fuertes y yo admiro muchas cosas de ti. Sabes que eres una gran persona, honesta, atenta, noble, trabajadora, visionaria, y otras miles de cosas increíbles como persona, claro que tienes tus cosas malas como todos, pero realmente no tengo una razón para no amarte como te amo 💞.</p>
+        
+        <p><span class="cancion">"We will be alright, we won't cry"</span> espero que estos días podamos estar bien, juntos y unidos ya que es una época del año para eso y pronto se acerca el día en el que se cumpla otro año contigo, me gustaría que dejáramos de llorar y de sufrir por lo malo que ha pasado y tratar de estar bien y disfrutar un poco más de nosotros.</p>
+        
+        <p><span class="cancion">"Seremos un lugar seguro, el tiempo pasará, tenemos miles de futuros"</span>. Me gustaría volver a ser esa persona con la que te sentías refugiada y en la que confías más que nadie, sé que he hecho cosas malas para perder tu confianza y la seguridad que tenías de contarme tu vida y tus problemas para que yo te hiciera sentir como tu lugar seguro, solo prometo esforzarme para volver a serlo. Sé que tenemos miles de cosas por vivir y sé que si cuidamos esta relación puede ser algo más que solo ser novios durante 3 años, espero que el tiempo tenga buenas cosas preparadas para cada uno y para nuestra relación 🙏❤️.</p>
+        
+        <p><span class="cancion">"Tú eres lo que siempre yo soñé, My love, mi one and only love"</span> qué te puedo decir, a días de cumplir casi 3 años sigo pensando en que tú eres la chica perfecta para mí, pero sí quisiera aclarar que no eres lo que siempre soñé, y bueno eso no quiere decir que sea malo, al contrario me hiciste pensar de una manera muy diferente, al ser tan tú haces que mi vida tenga un color diferente. Gracias a ti, sé que encontrar a alguien "como siempre había soñado", no hubiera sido tan genial como encontrar a una persona como tú, que me complementa, me enseña y me hace aprender cosas nuevas, adquirir nuevos gustos y nuevas sabidurías.</p>
+        
+        <p>En general te agradezco por no ser la chica que siempre soñé y por venir a mi vida a cambiar mi forma de pensar, y bueno, en general sé que eres tú la persona con la que he vivido tanto que sé que nunca voy a acabar de sorprenderme por lo maravillosa que eres, por lo única y auténtica, por lo risueña, cariñosa y a veces enojona. He aprendido a quererte, a entenderte y a tratar de llevarme bien con tus defectos. No dudes que siempre voy a tratar de ser mejor para ti y que siempre que me equivoque sabré apartarme de ti pero tampoco dudes que voy a tratar de buscarte siempre que haya mejorado, porque simplemente no imagino nada en este mundo si no estás tú.</p>
+        
+        <p style="text-align: center; font-size: 22px;"><strong><em>My love, mi one and only love 💘</em></strong></p>
+    </div>
+
+    <!-- Etiqueta de audio oculta -->
+    <audio id="miCancion" src="cancion.mp3"></audio>
+
+    <script>
+        document.getElementById("btnEntrar").addEventListener("click", function() {
+            this.style.display = "none";
+            document.getElementById("contenido").style.display = "block";
+            document.getElementById("miCancion").play();
+        });
+    </script>
+
+</body>
+</html>
